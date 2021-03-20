@@ -6,13 +6,19 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import csv
 
-filename = 'irisdataCSV.csv'
+irisCsv = pd.read_csv('irisdataCSV.csv')
 
-with open(filename, 'rt') as csvFile:
-    csvReader = csv.reader(csvFile, delimiter = ',')
-    firstLine = True
-    for line in csvReader:
-        if firstLine:
-            firstline = False
-            continue
-        print(line[1])
+classCount = irisCsv['class'].value_counts()
+
+for n in range (0, 150):
+    if irisCsv['class'][n] == 'Iris-setosa':
+        plt.scatter(irisCsv['sepal length in cm'][n], irisCsv['sepal width in cm'][n], color = 'red')
+        plt.xlabel('Sepal Lenghth CM')
+        plt.ylabel('Serpal Width CM')
+    elif irisCsv['class'][n] == 'Iris-virginica':
+        plt.scatter(irisCsv['sepal length in cm'][n], irisCsv['sepal width in cm'][n], color = 'green')
+    else:
+        plt.scatter(irisCsv['sepal length in cm'][n], irisCsv['sepal width in cm'][n], color = 'blue')
+plt.legend()
+plt.savefig('ScatterPlot - Sepal Length and Width.png')
+#plt.show()
