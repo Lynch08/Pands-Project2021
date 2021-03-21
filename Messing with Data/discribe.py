@@ -3,5 +3,5 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 data = pd.read_csv('IrisdataCSV.csv')
-ddata = data.describe()
+ddata = data.column()
 print(ddata)

@@ -20,5 +20,5 @@ for n in range (0, 150):
     else:
         plt.scatter(irisCsv['sepal length in cm'][n], irisCsv['sepal width in cm'][n], color = 'blue')
 plt.legend()
-plt.savefig('ScatterPlot - Sepal Length and Width.png')
-#plt.show()
+#plt.savefig('ScatterPlot - Sepal Length and Width.png')
+plt.show()

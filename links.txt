@@ -1,1 +1,3 @@
 https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset - visulaisation and code
+https://realpython.com/python-csv/ - real python tutorial for using CSVs
+https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ - outputing data as histograms
