@@ -6,6 +6,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 irisCsv = pd.read_csv('IrisdataCSV.csv')
+dataSum = irisCsv.describe()
+
+with open ('summary.txt', 'w') as f:
+    f.write(str(dataSum))
 
 plt.figure(figsize = (10,7))
 sepLenHis = irisCsv['petal length in cm']
