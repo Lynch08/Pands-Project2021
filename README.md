@@ -24,3 +24,11 @@ This gave me a little confidence in the sense that I should just start from the 
 
 Once I felt I had done adaquete research on what the data was I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. My first decision was how did I want to have the data stored. I decided CSV was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
 From there I did some more research on reviewed some previous labs that had touched on CSV data. There was so much I decided to create a new bookmarks foler in Chrome called Pandas Bookmarks - and I edited the names so it was clear what the bookmark was for(this was not always cleare by the URL or given heading) 
+
+### Citations
+https://www.datacamp.com/community/tutorials/histograms-matplotlib 
+https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d 
+https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x 
+https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ 
+https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset 
+
