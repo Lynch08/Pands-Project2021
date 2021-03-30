@@ -1,8 +1,13 @@
+This is a basic summary of the data set - a count of the 3 Species of Iris and a consise summary of the overall dataset using the pandas liberary 
+ 
 species
 Iris-setosa        50
 Iris-versicolor    50
 Iris-virginica     50
-dtype: int64None       sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
+dtype: int64
+
+
+       sepal length in cm  sepal width in cm  petal length in cm  petal width in cm
 count          150.000000         150.000000          150.000000         150.000000
 mean             5.843333           3.054000            3.758667           1.198667
 std              0.828066           0.433594            1.764420           0.763161
