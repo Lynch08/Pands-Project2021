@@ -28,6 +28,8 @@ https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
   - Iris data file. This is the data set that was analysed. This was read by the programs using the PANDAS liberary in python.
   - The prgrams that I used in analysing and displaying the data. These included comments to show my understanding of the code and the were vital when documenting my analytical process.
 
+### Python and the Libaries User
+
 ### Initial Research
 As this was my first programming project I found the initial research of this dataset a little daunting.
 There were so many ways that that this data had been previously researched and visualised in a range of disiplines - Statistics, Machine Learning, Data Representation, Data Visulaisation to name a few. It was difficult to wrap my head around how this seemingly simple set of flower types and their four common, but variable attributes, were a recognised building block of some of the most intricate and complex tools that are used in computing and data science today.
@@ -43,9 +45,30 @@ From there I did some more research and reviewed some previous labs that had tou
  From these figures I could begin to do some early analysis.
   - The biggest gap between the min and max values were in the petal lengths and sepal lengths - this held through with the varience in the standard diviation.
   - From the Mean data I could see that sepal lenght and widths were, in relitive terms, significatly larger than the petal counterparts
-  - Standard Deviations showed that there was slightly higher varience in the petal lenght and width than the sepal lenght and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
+  - Standard Deviations showed that there was a higher varience in the petal lenght and width than the sepal lenght and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
+
+### Viualisation and Analysis of Plots
+At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code from another project "Datagatherer2357" that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
+
+INSERT PICTURE - Histograms
+INSERT PICTURE - Bar Graph
+
+
+The plots above confirmed my intitial analysis. The histogram and barchart both showed that although the Sepal had the higher maximum values in its variables (length and width) the varience, or standerd deviation was notably less between the species than that of the petal. This indicated to me once again, that if I was ever to give advice to an aspiring botenist about the difference between iris species, it would be "look at the petal". 
+The histogrphs indicated the varience spread with wide data range on the petal measurments and the barchart then confirmed this clearly showing the setsosa was far smaller than the other two species. In contrast the sepal values were far closer together in the barchart and the histogram showed the varience was much more clustered.
+
+Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable.
+
 
   
+
+
+
+  
+  ### Error Codes Encounterd
+
+  # UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`.
+ 
  
   
 
