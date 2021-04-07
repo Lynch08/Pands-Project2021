@@ -19,6 +19,13 @@ with open ('summary.txt', 'w' ) as f:
 irisSum = irisCsv.describe()
 with open ('summary.txt', 'a') as f:
     f.write(str(irisSum))
+    f.write('\n\n\n')
+
+#Breakdown of the data by Species
+specSum = irisCsv.groupby('species').describe()
+with open ('summary.txt', 'a' ) as f:
+    f.write('This is a summary of the data set - broken down by the variables and species to for easier comparison \n')
+    f.write(str(specSum))
 
 #Histogram of the each of the variables
 irisCsv.hist(figsize = (8, 6))
