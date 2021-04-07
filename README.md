@@ -37,14 +37,14 @@ After some initial headscratching google searchs I decided to start at the begin
 This gave me a little confidence in the sense that I should just start from the begining with no preconcieved notions about what data was going to show me and just begin to use the skills I had aquired in my short time learning python to generate a picture of what the data was trying to display. I could dive into the further uses for how the method of my analysis could be used in other applications at a later time.
 
 Once I felt I had done adaquete research on what the data was I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the data stored. I decided CSV was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
-From there I did some more research and reviewed some previous labs that had touched on CSV data during the course. There was so much I decided to create a new bookmarks foler in Chrome called "Pandas Project Bookmarks" - and I edited the names so it was clear what the bookmark was for(this was not always clear by the URL or given heading).
+From there I did some more research and reviewed some previous labs that had touched on CSV data during the course. There was so much I decided to create a new bookmarks folder in Chrome called "Pandas Project Bookmarks" - and I edited the names so it was clear what the bookmark was for(this was not always clear by the URL or given heading).
 
 ### First Analysis
  The first thing I did  was jump into making histograms and scatter plots and try to study them to get some insight into the data.  I quickly realised this was a mistake as I was not really able to analyse the pictures as I had not summarised the basic data behind the graphs I was generating.
  I found an extremly useful function in the pandas libary called describe().  This gave me some basic statistics on the data set such as mean, max, min and standard deviations.
  From these figures I could begin to do some early analysis.
   - The biggest gap between the min and max values were in the petal lengths and sepal lengths - this held through with the varience in the standard diviation.
-  - From the Mean data I could see that sepal lenght and widths were, in relitive terms, significatly larger than the petal counterparts
+  - From the Mean data I could see that sepal lenght and widths were, in relative terms, significatly larger than the petal counterparts
   - Standard Deviations showed that there was a higher varience in the petal lenght and width than the sepal lenght and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
 
 ### Viualisation and Analysis of Plots
@@ -57,7 +57,19 @@ INSERT PICTURE - Bar Graph
 The plots above confirmed my intitial analysis. The histogram and barchart both showed that although the Sepal had the higher maximum values in its variables (length and width) the varience, or standerd deviation was notably less between the species than that of the petal. This indicated to me once again, that if I was ever to give advice to an aspiring botenist about the difference between iris species, it would be "look at the petal". 
 The histogrphs indicated the varience spread with wide data range on the petal measurments and the barchart then confirmed this clearly showing the setsosa was far smaller than the other two species. In contrast the sepal values were far closer together in the barchart and the histogram showed the varience was much more clustered.
 
-Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable.
+Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable, and distingusihes by object type(species).
+A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python!
+
+INSERT PICTURE - Pairplot
+
+When looking at the pairplot scatter plots it is clear from a glance that Iris-Setsosa is linerary sepreaple in almost all cases from the other species. Both sepal and petal length are significanly smaller than the Iris-Versicolor and Iris-Virginca and from the histogram we again can clearly see the Iris-setsosa is far smaller and the vairence of the petal lenght was smaller so most likly more distinct. 
+As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumpthions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary.
+From the pairplot and the breakdown of the numeriacl data by species I reached some of my first conclusions.
+
+- Because of the distintly small size and varierence of the Iris-Setsosa petals they are easily more distingtive then the other two species in the data set.
+- There is some crossover (not linerary seperable) of the Iris-Versicolor and Iris-Virginica however from the graphs and data alredy generated to this point we can see that some trends are beginning to emerge.
+- The Iris-Virgina seemed, in most cases to have a bigger petals and sepals than the Iris-Versicolor, this was reflected in the numberical data, as all mean data across the 4 variables was higher, however from the plots and the cross over between the max and min values of the variables of the 2 speciecs, it was evident the distingtion between these was not going to be as clearcut.
+
 
 
   
@@ -80,4 +92,6 @@ https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-dat
 https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x 
 https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ 
 https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset 
+https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf
+
 
