@@ -1,0 +1,5 @@
+Iris Virginica,Sepal Length,Sepal Width,Petal Length,Petal Width
+count,50.0,50,50.0,50.0
+unique,21.0,13,20.0,12.0
+top,6.3,3,5.1,1.8
+freq,6.0,12,7.0,11.0
