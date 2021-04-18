@@ -1,4 +1,4 @@
-#This is the forth draft of my analysis.py file which will include comments, funtions and loops
+#This is the fifth draft of my analysis.py file which will include comments, funtions and loops
 #Author: Enda Lynch
 
 
@@ -18,8 +18,11 @@ irisCsv_set = grouped.get_group('Iris-setosa')
 irisCsv_ver = grouped.get_group('Iris-versicolor')
 irisCsv_vir = grouped.get_group('Iris-virginica')
 
+######################## Summary Data - This data is being written to a file called summary.txt #############################
+#Summary.txt will be created if it does not exist 
+#If summary.txt exists, file will overwrite and save every time the program is run
 
-#Give a count of the type of data
+#Give a count of each species in dataset
 irisSize = irisCsv.groupby('species').size()
 with open ('summary.txt', 'w' ) as f:
     f.write('This is a basic summary of the data set - a count of the 3 Species of Iris and a consise summary of the overall dataset using the pandas liberary \n \n')
@@ -43,7 +46,7 @@ sumSet = irisCsv_set.describe()
 sumVer = irisCsv_ver.describe()
 sumVir = irisCsv_vir.describe()
 with open ('summary.txt', 'a' ) as f:
-    f.write('\n\nThis is a summary of the data set - broken down by species alone \n')
+    f.write('\n\nThis is a summary of the data set - broken down by individual species\n')
     f.write('Iris-setosa\n')
     f.write(str(sumSet))
     f.write('\n\n\nIris-versicolor\n')
@@ -66,7 +69,7 @@ with open ('summary.txt', 'a' ) as f:
 
 
 
-####### Functions for each plot ########################
+############################# Functions for each plot #############################################
 
 #Histogram of the each of the variables
 def hist():
@@ -99,84 +102,103 @@ def swarm():
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="petal length", data=irisCsv)
+    plt.title('Petal Length')
     plt.show()
 
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="petal width", data=irisCsv)
+    plt.title('Petal Width')
     plt.show()
 
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="sepal length", data=irisCsv)
+    plt.title('Sepal Length')
     plt.show()
 
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="sepal width", data=irisCsv)
+    plt.title('Sepal Width')
     plt.show()
 
+#Swarm plots - same maps as above but function will save to .png
 def swarmsave():
+    plt.figure()
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="petal length", data=irisCsv)
+    plt.title('Petal Length')
     plt.savefig('Swarm Plot Petal Len.png')
 
+    plt.figure()
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="petal width", data=irisCsv)
+    plt.title('Petal width')
     plt.savefig('Swarm Plot Petal Wid.png')
 
+    plt.figure()
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="sepal length", data=irisCsv)
+    plt.title('Sepal Length')
     plt.savefig('Swarm Plot Sepal Len.png')
 
+    plt.figure()    
     sns.set(style="whitegrid")
     fig=plt.gcf()
     fig.set_size_inches(10,7)
     fig = sns.swarmplot(x="species", y="sepal width", data=irisCsv)
+    plt.title('Sepal Width')
     plt.savefig('Swarm Plot Sepal Wid.png')
 
+#heat maps - help show correlation between variables for individual species
 def heatmul():
     sns.heatmap(irisCsv_set.corr(), annot=True, cmap='rainbow') 
-    plt.title('Setsosa')
+    plt.title('Iris-Setsosa')
     plt.show()
 
     sns.heatmap(irisCsv_ver.corr(), annot=True, cmap='rainbow') 
-    plt.title('Versicolor')
+    plt.title('Iris-Versicolor')
     plt.show()
 
     sns.heatmap(irisCsv_vir.corr(), annot=True, cmap='rainbow') 
-    plt.title('Virginica')
+    plt.title('Iris-Virginica')
     plt.show()
 
+#heat maps - same maps as above but function will save to .png
 def heatmulsave():
+    plt.figure()
     sns.heatmap(irisCsv_set.corr(), annot=True, cmap='rainbow') 
-    plt.title('Setsosa')
+    plt.title('Iris-Setsosa')
     plt.savefig('HeatMap Setsosa.png')
-
+    
+    plt.figure()
     sns.heatmap(irisCsv_ver.corr(), annot=True, cmap='rainbow') 
-    plt.title('Versicolor')
+    plt.title('Iris-Versicolor')
     plt.savefig('HeatMap Versicolor.png')
 
+    plt.figure()
     sns.heatmap(irisCsv_vir.corr(), annot=True, cmap='rainbow') 
-    plt.title('Virginica')
+    plt.title('Iris-Virginica')
     plt.savefig('HeatMap Virginica.png')
 
+#################### Display Menu for user to decide what plots they want to see and save if neccessary############################
 i = "input"
 def displayMenu():
     i = (input('''\nSummary data has been saved to the file Summary.txt\n\n\nPlotting Options (The program will continue to run until 0 is entered):\n
     0 - Exit without plotting
     1 - Histograms of all 4 variables
     2 - Bargraph of Variables
-    3 - PairPlot - All variables plotted againest all other variables
+    3 - PairPlot - All variables plotted againest all other variables as scatter plots
     4 - Box plot - Distribution of variable data
     5 - HeatMap - Corrolation between variables
     6 - Swarmplots - 4 Plots, one for each variable (Close plot to see the next)
@@ -185,6 +207,10 @@ def displayMenu():
     9 - Save all plots as .png
     Please enter the number of an option listed above (invalid inputs will not be accepted): '''))
     return i
+
+# Loop to call the relavent choice from the display menu function
+# Program will not exit until user selects exit option (0)
+# Error handling will not allow user to input invalid value
 
 i = displayMenu()
 while (i):
@@ -195,8 +221,8 @@ while (i):
             if i == 0:                         # Exit program
                 print('\n\nYou Have Exited The Program\n\n')  # Inform user that the program is finished
 
-            elif i == 1:
-                hist()
+            elif i == 1:                            
+                hist()                         
                 plt.show()
                 i = displayMenu()
 
@@ -227,6 +253,7 @@ while (i):
             elif i == 7:
                 heatmul()
                 i = displayMenu()
+
             # Show all plots in sequence
             elif i == 8:
                 hist()
@@ -242,6 +269,7 @@ while (i):
                 swarm()
                 heatmul()
                 i = displayMenu()
+
             # Save all plots
             elif i == 9:
                 hist()

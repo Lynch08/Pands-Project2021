@@ -28,7 +28,7 @@ Iris-virginica          50.0  6.588  0.635880  4.9  6.225  6.5  6.9  7.9        
 
 [3 rows x 32 columns]
 
-This is a summary of the data set - broken down by species alone 
+This is a summary of the data set - broken down by individual species
 Iris-setosa
        sepal length  sepal width  petal length  petal width
 count      50.00000    50.000000     50.000000     50.00000
