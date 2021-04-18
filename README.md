@@ -121,7 +121,7 @@ INSERT PICTUREs - Describe funtion and correlation function for each species
    - Old code - I found that some of the code I encountered was using old paramaters in the functions, I had to make some changes and read up on how to correct this. 
    Example:  
    UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`. 
-   -Rerunning my code - I found it extremly irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
+   - Rerunning my code - I found it extremly irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
    1. Set the first input in my summary to 'w', and the rest to 'a', this allowed me to overwrite and append every time so every time I ran the program I was able to test that my summary.txt file had not been corrupted
    2. I created my plots as functions this allowed me to call them when required and gave me flexability of when I wanted to save and show.
    3. Added looping and an exit button for my program - this was really helpful, I added a while loop that allowed me to run again without having to rerun the program from the command line and an exit input (0) for my program, this allowed me to get out quickly to make a change when i desiered. 
