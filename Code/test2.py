@@ -6,29 +6,18 @@ import numpy as np
 
 irisCsv = pd.read_csv('IrisdataCSV.csv')
 
-irisCsv.columns = ['sepal length', 'sepal width', 'petal length' , 'petal width', 'species']
-grouped = irisCsv.groupby('species')
-
-irisCsv_set = grouped.get_group('Iris-setosa')
-irisCsv_ver = grouped.get_group('Iris-versicolor')
-irisCsv_vir = grouped.get_group('Iris-virginica')
+#irisCsv.columns = ['sepal length', 'sepal width', 'petal length' , 'petal width', 'species']
+#grouped = irisCsv.groupby('species')
+fig, axes = plt.subplots(2,2, figsize = (10,10))
+sns.histplot(irisCsv['petal length'], ax=axes[0,0]).legend('species')
 
 
-def heatmulsave():
-    plt.figure()
-    sns.heatmap(irisCsv_set.corr(), annot=True, cmap='rainbow') 
-    plt.title('Iris-Setsosa')
-    plt.savefig('HeatMap Setsosa.png')
+sns.histplot(irisCsv['petal width'], ax=axes[0,1]).legend('species')
 
-    plt.figure()
-    sns.heatmap(irisCsv_ver.corr(), annot=True, cmap='rainbow') 
-    plt.title('Iris-Versicolor')
-    plt.savefig('HeatMap Versicolor.png')
-    
-    plt.figure()
-    sns.heatmap(irisCsv_vir.corr(), annot=True, cmap='rainbow') 
-    plt.title('Iris-Virginica')
-    plt.savefig('HeatMap Virginica.png')
-    
 
-heatmulsave()
+sns.histplot(irisCsv['sepal length'], ax=axes[1,0]).legend('species')
+
+
+sns.histplot(irisCsv['sepal width'], ax=axes[1,1]).legend('species')
+
+plt.show()
