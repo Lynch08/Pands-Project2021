@@ -86,10 +86,19 @@ From the pairplot and the breakdown of the numeriacl data by species I reached s
 
 I then began to play with other types of plots that were really new to me. I had at least a basic understanding of histograms, bargraphs and scatter plots and they were easier enough to read, but now as I was diving deeper into the analysis I was coming across analysis tools I had zero experience with such as box plots, swarm plots and heat maps.
 
-I should say at this point I was getting a litte frustrated with having to run my entire program everytime I wanted to see a specific plot for comparison. This led me to creating functions for each of the plots in my code, and creating a display menu so I could call on any specific plot that I wanted easily. From this I got the idea to allow the user to simply display or save all of the plots. This way by running the programme the user could jump back and forth between plots, or save them as a group for laster analysis.
+I should say at this point I was getting a litte frustrated with having to run my entire program everytime I wanted to see a specific plot for comparison. This led me to creating functions for each of the plots in my code, and creating a display menu so I could call on any specific plot that I wanted easily. From this I got the idea to allow the user to simply display or save all of the plots. This way by running the programme the user could jump back and forth between plots, or save them as a group for later analysis.
 
-  
+I used a box plot and swarmplots(4 swarm plots that showed the distribution by species) to demonstrate the the distribution differences between each of the variables and the species.
+Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
 
+##### Correlations of Variables
+I used a heat map to help me with anaysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
+Where the correlation is 1 or 'reddest' we can see that the variable data will be the same the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
+The least correlation happens between petal values and sepal width (-.42 and -.36). 
+We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 we can assume this is the case across all species.
+Surprising to me, there was a high correlation between the petal values and the sepal length (.87 and .82, petal length and width respectivly) This correlation was surpring as it was so low with the sepal width. 
+I was able to conclude from this data that the sepal width did not strongly correlate with any of the other variables.
+However because my interest was now peaked by the fact the sepal variables did not correlate I decided, once again to go back to the discribe function to create an indidual table for each species - this was added to the summary.txt file.
 
 
   

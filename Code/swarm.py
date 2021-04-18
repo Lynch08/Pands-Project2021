@@ -8,7 +8,7 @@ import numpy as np
 irisCsv = pd.read_csv('IrisdataCSV.csv')
 petldata = irisCsv.groupby('petal length')
 print(petldata)
-break
+
 
 petwdata = irisCsv.groupby('petal width')
 sepldata = irisCsv.groupby('sepal length')
