@@ -92,20 +92,44 @@ I used a box plot and swarmplots(4 swarm plots that showed the distribution by s
 Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
 
 ##### Correlations of Variables
-I used a heat map to help me with anaysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
+I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
 Where the correlation is 1 or 'reddest' we can see that the variable data will be the same the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
+
+INSERT PICTURE - Heatmap of full dataset
+
 The least correlation happens between petal values and sepal width (-.42 and -.36). 
-We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 we can assume this is the case across all species.
-Surprising to me, there was a high correlation between the petal values and the sepal length (.87 and .82, petal length and width respectivly) This correlation was surpring as it was so low with the sepal width. 
+We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 i began to assume this is the case across all species.
+Surprisingly to me, there was a high correlation between the petal values and the sepal length (.87 and .82, petal length and width respectivly) This correlation was surprising as it was so low with the sepal width. 
 I was able to conclude from this data that the sepal width did not strongly correlate with any of the other variables.
-However because my interest was now peaked by the fact the sepal variables did not correlate I decided, once again to go back to the discribe function to create an indidual table for each species - this was added to the summary.txt file.
+However because my interest was now peaked by the fact the sepal variables did not strongly correlate, I decided once again, to go back to the discribe() function to create an indidual table for each species - this was added to the summary.txt file. This was not great for visualisation and I had found the heat map far more user friendly, so I decided to generate one for each species. The compbination of the text summary and the heatmaps, led to some very intersting findings.
+Firstly the correlations that I had found with the overall dataset did not seem to carry over to the correlations of the grouped species. This led me to double check my data and do some googeling to ensure my code was correct. From my researh I found that this was a known phenomenon with the dataset, and may other datasets called Simpsons Paradox.
+Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. https://www.britannica.com/topic/Simpsons-paradox
+This was interesting and led me to reading up more on Simpsons Paradox.
+It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset.
 
 
-  
-  ### Error Codes Encounterd
+INSERT PICTUREs - Heatmap of each species
+INSERT PICTUREs - Describe funtion and correlation function for each species
 
-  1. UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`.
- 
+
+### Summary and Conclusions
+
+
+  ### Problems encountered with coding
+   - I had some issues trying to seperate the data out for the correlation part, it took a lot of googleling and reading up on the groupby() function.
+   - One of my regrets is that I failed to get the swarmplots all on to one .png. I did a lot of research but could not seem to nail it. It led to me having to create 2 functions, for both the swarm plots and species specific heat maps, one for show and one for saving. I would have liked that to be neater.
+   - Old code - I found that some of the code I encountered was using old paramaters in the functions, I had to make some changes and read up on how to correct this. 
+   Example:  
+   UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`. 
+   -Rerunning my code - I found it extremly irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
+   1. Set the first input in my summary to 'w', and the rest to 'a', this allowed me to overwrite and append every time so every time I ran the program I was able to test that my summary.txt file had not been corrupted
+   2. I created my plots as functions this allowed me to call them when required and gave me flexability of when I wanted to save and show.
+   3. Added looping and an exit button for my program - this was really helpful, I added a while loop that allowed me to run again without having to rerun the program from the command line and an exit input (0) for my program, this allowed me to get out quickly to make a change when i desiered. 
+
+### Problems encountered with data analysis
+ - Unfamiliarity with some of the tools. Outside my obvious rookie user level with python I found some of the plots and graphs tough to analyse at the beginning. I could understand the noraml histograms and scatter plots to a certain level but I had to do some research on things like box plots, swarm plots and heat maps. However once I had done the research I found them extremly valuable, especially the swarm plots and heat maps.
+ -  Volume of data - there was so much data and research done on the Iris Data set it was a little daunting to try to figure out where to begin. However it was a lot of comfort to be part of the discord group with my classmates to see I was not the only one that had this anxiety. This along with the time given to complete the project, and being able to refer back to my labs, really helped me to get through it bit by bit.
+- Math - It had been awhile since I had tried my hand at math that could not be done by a simple calculator. Some terms such as Standard Divation were a little frightening at the beginning, luckaily YouTube was a great help here to get me reaquainted with the basics once again. Once I was comfortable with the basics I was able to see how these were really valuabele when applied to the dataset and allowed me to make assumtions and clear analyictical statements from what the data was experessing through these mathamatical functions
  
   
 
@@ -119,5 +143,5 @@ https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset 
 https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf
 https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook (heatmap)
-
+https://www.britannica.com/topic/Simpsons-paradox
 

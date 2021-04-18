@@ -12,7 +12,7 @@ irisCsv = pd.read_csv('IrisdataCSV.csv')
 
 irisCsv.columns = ['sepal length', 'sepal width', 'petal length' , 'petal width', 'species']
 grouped = irisCsv.groupby('species')
-#print (grouped.first())
+#test print (grouped.first())
 
 irisCsv_set = grouped.get_group('Iris-setosa')
 irisCsv_ver = grouped.get_group('Iris-versicolor')
@@ -38,21 +38,35 @@ with open ('summary.txt', 'a' ) as f:
     f.write('This is a summary of the data set - broken down by the variables and species to for easier comparison \n')
     f.write(str(specSum))
 
-#Breakdown of the data by Species individually
-setSet = irisCsv_set.describe()
-setVer = irisCsv_ver.describe()
-setVir = irisCsv_vir.describe()
+#Breakdown of the data by individual species  
+sumSet = irisCsv_set.describe()
+sumVer = irisCsv_ver.describe()
+sumVir = irisCsv_vir.describe()
 with open ('summary.txt', 'a' ) as f:
     f.write('\n\nThis is a summary of the data set - broken down by species alone \n')
     f.write('Iris-setosa\n')
-    f.write(str(setSet))
+    f.write(str(sumSet))
     f.write('\n\n\nIris-versicolor\n')
-    f.write(str(setVer))
+    f.write(str(sumVer))
     f.write('\n\n\nIris-virginica\n')
-    f.write(str(setVir))
+    f.write(str(sumVir))
+
+#Breakdown of the correlation of the data by individual species 
+corSet = irisCsv_set.corr()
+corVer = irisCsv_ver.corr()
+corVir = irisCsv_vir.corr()
+with open ('summary.txt', 'a' ) as f:
+    f.write('\n\nThis is a summary of the correlations in the data set - broken down by species alone \n')
+    f.write('Iris-setosa\n')
+    f.write(str(corSet))
+    f.write('\n\n\nIris-versicolor\n')
+    f.write(str(corVer))
+    f.write('\n\n\nIris-virginica\n')
+    f.write(str(corVir))
 
 
-####### Functions for each plot
+
+####### Functions for each plot ########################
 
 #Histogram of the each of the variables
 def hist():
@@ -177,7 +191,7 @@ while (i):
     try:
     # Try to convert 'i' to an integer type
         i = int(i)          
-        if i >= 0:                             # If 'i' is an non-zero positive integer not one of the choices below                   
+        if i >= 0:                             # If 'i' is an non-zero positive integer (not one of the choices below)                   
             if i == 0:                         # Exit program
                 print('\n\nYou Have Exited The Program\n\n')  # Inform user that the program is finished
 
