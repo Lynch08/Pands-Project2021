@@ -14,10 +14,6 @@ One species, Iris Setosa, is "linearly separable" from the other two. This means
 
 From initial research it was clear that this dataset has been analysed in depth by thousands of scholars before me and there was going to be many ways to look at and represent this data.   
 
-https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
-https://github.com/venky14/Machine-Learning-with-Iris-Dataset
-https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
-
 ### Planned Project Outcomes
 1. To break the project down into small managable tasks  
 2. To gain an understanding of the data presented in the Iris Data set
@@ -137,12 +133,15 @@ It was a good learning expierence as it taught me not to take for granted the re
 
 
 ### Citations
-https://www.datacamp.com/community/tutorials/histograms-matplotlib 
-https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d 
-https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x 
-https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ 
-https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset 
-https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf
-https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook (heatmap)
-https://www.britannica.com/topic/Simpsons-paradox
+1. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
+2. https://github.com/venky14/Machine-Learning-with-Iris-Dataset
+3. https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x
+4. https://www.datacamp.com/community/tutorials/histograms-matplotlib 
+5. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d 
+6. https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x 
+7. https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ 
+8. https://www.kaggle.com/vasanthreddy/data-visualisation-of-iris-dataset 
+9. https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf
+10. https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook (heatmap)
+11. https://www.britannica.com/topic/Simpsons-paradox
 
