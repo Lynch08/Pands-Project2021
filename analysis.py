@@ -59,7 +59,7 @@ corSet = irisCsv_set.corr()
 corVer = irisCsv_ver.corr()
 corVir = irisCsv_vir.corr()
 with open ('summary.txt', 'a' ) as f:
-    f.write('\n\nThis is a summary of the correlations in the data set - broken down by species alone \n')
+    f.write('\n\nThis is a summary of the correlations in the data set - broken down by individual species \n')
     f.write('Iris-setosa\n')
     f.write(str(corSet))
     f.write('\n\n\nIris-versicolor\n')
