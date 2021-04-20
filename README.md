@@ -108,9 +108,12 @@ Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect t
 This was interesting and led me to reading up more on Simpsons Paradox.
 It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.
 
-![](Images/Heatmap%20Setsosa.png)   
-![](Images/Heatmap%20Versicolor.png)    
+![](Images/Heatmap%20Setsosa.png)
+
+![](Images/Heatmap%20Versicolor.png)
+
 ![](Images/Heatmap%20Virginica.png)
+
 INSERT PICTUREs - Describe funtion and correlation function for each species
 
 
