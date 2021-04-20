@@ -64,7 +64,7 @@ From there I did some more research and reviewed some previous labs that had tou
 At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code from another project "Datagatherer2357" that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
 
 INSERT PICTURE - Histograms
-INSERT PICTURE - Bar Graph
+![](Images/Barplot.png)
 
 
 The plots above confirmed my intitial analysis. The histogram and barchart both showed that although the Sepal had the higher maximum values in its variables (length and width) the varience, or standerd deviation was notably less between the species than that of the petal. This indicated to me once again, that if I was ever to give advice to an aspiring botenist about the difference between iris species, it would be "look at the petal". 
