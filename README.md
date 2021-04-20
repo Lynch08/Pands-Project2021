@@ -71,9 +71,9 @@ The histogrphs indicated the varience spread with wide data range on the petal m
 Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable, and distingusihes by object type(species).
 A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python.
 
-![](Images/Pairplot.png)  ![](Images/Summary%20Petal.png) ![](Images/Summary%20Sepal.png)
-
-
+![](Images/Pairplot.png)
+![](Images/Summary%20Petal.png)
+![](Images/Summary%20Sepal.png)
 
 When looking at the pairplot scatter plots it is clear from a glance that Iris-Setsosa is linerary sepreaple in almost all cases from the other species. Both sepal and petal length are significanly smaller than the Iris-Versicolor and Iris-Virginca and from the histogram we again can clearly see the Iris-setsosa is far smaller and the vairence of the petal lenght was smaller so most likly more distinct. 
 As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumpthions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary (summary.txt file).
@@ -144,4 +144,9 @@ It was a good learning expierence as it taught me not to take for granted the re
 9. https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf
 10. https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook (heatmap)
 11. https://www.britannica.com/topic/Simpsons-paradox
+12. https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+13. https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
+14. https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
+
+
 
