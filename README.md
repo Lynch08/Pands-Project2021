@@ -105,7 +105,7 @@ However because my interest was now peaked by the fact the sepal variables did n
 Firstly the correlations that I had found with the overall dataset did not seem to carry over to the correlations of the grouped species. This led me to double check my data and do some googeling to ensure my code was correct. From my researh I found that this was a known phenomenon with the dataset, and may other datasets called Simpsons Paradox.
 Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. https://www.britannica.com/topic/Simpsons-paradox
 This was interesting and led me to reading up more on Simpsons Paradox.
-It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset.
+It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.
 
 
 INSERT PICTUREs - Heatmap of each species
