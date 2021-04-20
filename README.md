@@ -63,7 +63,7 @@ From there I did some more research and reviewed some previous labs that had tou
 ### Viualisation and Analysis of Plots
 At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code from another project "Datagatherer2357" that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
 
-INSERT PICTURE - Histograms
+![](Images/Histograms.png)
 ![](Images/Barplot.png)
 
 
@@ -73,8 +73,9 @@ The histogrphs indicated the varience spread with wide data range on the petal m
 Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable, and distingusihes by object type(species).
 A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python.
 
-INSERT PICTURE - Pairplot
-INSERT PICTURE - discribe and grouped by variables
+![](Images/Pairplot.png)
+![](Images/Summary%20Petal.png)
+![](Images/Summary%20Sepal.png)
 
 When looking at the pairplot scatter plots it is clear from a glance that Iris-Setsosa is linerary sepreaple in almost all cases from the other species. Both sepal and petal length are significanly smaller than the Iris-Versicolor and Iris-Virginca and from the histogram we again can clearly see the Iris-setsosa is far smaller and the vairence of the petal lenght was smaller so most likly more distinct. 
 As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumpthions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary (summary.txt file).
@@ -95,7 +96,7 @@ Once again the data showed me that there was a much larger distribution of the s
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
 Where the correlation is 1 or 'reddest' we can see that the variable data will be the same the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
 
-INSERT PICTURE - Heatmap of full dataset
+![](Images/Heatmap.png)
 
 The least correlation happens between petal values and sepal width (-.42 and -.36). 
 We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 i began to assume this is the case across all species.
@@ -107,8 +108,7 @@ Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect t
 This was interesting and led me to reading up more on Simpsons Paradox.
 It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.
 
-
-INSERT PICTUREs - Heatmap of each species
+![](Images/Heatmap%20Setsosa.png)   ![](Images/Heatmap%20Versicolor.png)    ![](Images/Heatmap%20Virginica.png)
 INSERT PICTUREs - Describe funtion and correlation function for each species
 
 
