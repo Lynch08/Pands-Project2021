@@ -3,8 +3,8 @@ Project Repository for Programming and Scripting Module GMIT - 2021
 Topic is research and investigation of Fishers Iris Dataset.
 
 ## Table of Contents
-[-Introduction](https://github.com/Lynch08/Pands-Project2021#introduction)
-[-Planned Project Outcomes](https://github.com/Lynch08/Pands-Project2021#planned-project-outcomes)
+- [Introduction](https://github.com/Lynch08/Pands-Project2021#introduction)
+- [Planned Project Outcomes](https://github.com/Lynch08/Pands-Project2021#planned-project-outcomes)
 
 ### Introduction
 This is a project that is going to look at the data that is commonly known as the Iris Flower Dataset or Fishers Iris dataset. 
