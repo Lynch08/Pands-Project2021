@@ -127,13 +127,15 @@ I used a box plot and swarmplots (4 swarm plots that showed the distribution by 
 Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
 
 ![](Images/Boxplot.png)
-
 A boxplot is a way to show a five number summary in a chart. The main part of the chart (the “box”) shows where the middle portion of the data is: the interquartile range. At the bottom of the box, you find the first quartile (the 25% mark) and the third quartile (top) (the 75% mark). The bottom of the chart (at the end of the bottom “whisker”) is the minimum (the smallest number in the set) and the top is the maximum (the largest number in the set). Finally, the median is represented by a vertical bar in the center of the box.
 
+I found the swarmplots below a good way to  visualise the distribution.
+You can clearly see that although the sepal lengths have a wider varience, the crossover is far more evident than with the petal. You can also see the petal lengths and widths for the Iris-Setsosa are clearly distinct from the other two species.
 ![](Images/SwarmPlotPetalLen.png)
 ![](Images/SwarmPlotPetalWid.png)
 ![](Images/SwarmPlotSepalLen.png)
 ![](Images/SwarmPlotSepalWid.png)
+
 
 ### Correlations
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
