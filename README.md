@@ -109,7 +109,7 @@ A pairplot allows us to see both distribution of single variables (Univariate hi
 ![](Images/Pairplot.png)
 
 When looking at the pairplot scatter plots it is clear from a glance that Iris-Setsosa is linerary sepreaple in almost all cases from the other species. Both sepal and petal length are significanly smaller than the Iris-Versicolor and Iris-Virginca and from the histogram we again can clearly see the Iris-setsosa is far smaller and the vairence of the petal lenght was smaller so most likly more distinct. 
-As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumpthions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary (summary.txt file).
+As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumptions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary (summary.txt file).
 From the pairplot and the breakdown of the numeriacl data by species I reached some of my first conclusions.
 
 ![](Images/SummaryPetal.PNG)
@@ -123,8 +123,17 @@ I then began to play with other types of plots that were really new to me. I had
 
 I should say at this point I was getting a litte frustrated with having to run my entire program everytime I wanted to see a specific plot for comparison. This led me to creating functions for each of the plots in my code, and creating a display menu so I could call on any specific plot that I wanted easily. From this I got the idea to allow the user to simply display or save all of the plots. This way by running the programme the user could jump back and forth between plots, or save them as a group for later analysis.
 
-I used a box plot and swarmplots(4 swarm plots that showed the distribution by species) to demonstrate the the distribution differences between each of the variables and the species.
+I used a box plot and swarmplots (4 swarm plots that showed the distribution by species) to demonstrate the the distribution differences between each of the variables and the species.
 Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
+
+![](Images/Boxplot.png)
+
+A boxplot is a way to show a five number summary in a chart. The main part of the chart (the “box”) shows where the middle portion of the data is: the interquartile range. At the bottom of the box, you find the first quartile (the 25% mark) and the third quartile (top) (the 75% mark). The bottom of the chart (at the end of the bottom “whisker”) is the minimum (the smallest number in the set) and the top is the maximum (the largest number in the set). Finally, the median is represented by a vertical bar in the center of the box.
+
+![](Images/SwarmPlotPetalLen.png)
+![](Images/SwarmPlotPetalWid.png)
+![](Images/SwarmPlotSepalLen.png)
+![](Images/SwarmPlotSepalWid.png)
 
 ### Correlations
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
@@ -183,6 +192,7 @@ It was a good learning expierence as it taught me not to take for granted the re
 12. https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 13. https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
 14. https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
+15. https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/#:~:text=Back%20to%20Top-,How%20to%20Read%20a%20Box%20Plot,(the%2075%25%20mark).
 
 
 
