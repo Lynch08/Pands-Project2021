@@ -3,15 +3,16 @@ Project Repository for Programming and Scripting Module GMIT - 2021
 Topic is research and investigation of Fishers Iris Dataset.
 
 ## Table of Contents
-- [Introduction](https://github.com/Lynch08/Pands-Project2021#introduction)
+- [Introduction to the Iris Dataset](https://github.com/Lynch08/Pands-Project2021#introduction)
 - [Planned Project Outcomes](https://github.com/Lynch08/Pands-Project2021#planned-project-outcomes)
 - [The Repository Content](https://github.com/Lynch08/Pands-Project2021#the-repository-content)
 - [Python and Libaries Used](https://github.com/Lynch08/Pands-Project2021#python-and-the-libaries-used)
 - [Initial Research](https://github.com/Lynch08/Pands-Project2021#initial-research)
 - [First Analysis](https://github.com/Lynch08/Pands-Project2021#first-analysis)
-- [visialisation and Analysis](https://github.com/Lynch08/Pands-Project2021#viualisation-and-analysis-of-plots)
-- [Correlations]()
-### Introduction
+- [Visualisation and Analysis](https://github.com/Lynch08/Pands-Project2021#viualisation-and-analysis-of-plots)
+- [Correlations](https://github.com/Lynch08/Pands-Project2021#correlations)
+
+### Introduction to the Iris Dataset
 This is a project that is going to look at the data that is commonly known as the Iris Flower Dataset or Fishers Iris dataset. 
 During the research phase for this project I found that the study of this dataset seems to be the initial starting point for any would-be statistician or individual interested in studying Machine Learning and/or data visualisation.
 The Dataset came to the public forefront in 1936 when statistician Sir Ronal Aylmer Fisher published his report “The Use of Multiple Measurements in Taxonomic Problems” in the journal Annals of Eugenics.
@@ -51,22 +52,45 @@ Matplotlib is a plotting library for the Python programming language and its num
 - Seaborn: 
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
+### Bulding and Running analysis.py
+I went through many iterations of code before I came to my final draft.
+I first began with wildly long ways of producing histograms for each individual histograph and plots with duplicate code all over my program. This became not only confusing for myself to read, even with comments, it became frustrating to run and test. In the end, I tried to make the program as user friendly and as flexible as possible. 
+To run the code you will need a tool to run a python program(Python Version 3.0 or above). It was built and tested on Visual Studio Code, but can be run on other tools such as Idle or Cmdr.
+
+Once you run the program it will automatically output a text file to the folder you ran the code from called [summary.txt](https://github.com/Lynch08/Pands-Project2021/blob/main/summary.txt). This includes
+- A basic summary of the data set - a count of the 3 Species of Iris and a consise summary of the overall dataset using the pandas liberary
+- A summary of the data set - broken down by the variables and species to for easier comparison
+- A summary of the data set - broken down by individual species
+- A summary of the correlations in the data set - broken down by individual species. 
+Every time you run the program this summary.txt will be created if it does not exist, if summary.txt exists, the file will overwrite and save every time the program is run.
+
+Once the summmary output has been completed the user will be offered a Display Menu where they will have the option to either view individually or in sequence, or save, all the plots used for my analysis below.
+
+![](Images/Displaymenu.PNG)
+
+If the user inputs an incorrect value, error handling will not allow this and loop to the display menu again.
+Entering 0 (or Ctrl+C as normal) will allow the user to exit the program.
+If any other valid option is entered, the program will display or save the relevent plot(s) and loop back to the display menu once the plot has been closed or saving the plot image has been completed. 
+
 ### Initial Research
 As this was my first programming project I found the initial research of this dataset a little daunting.
 There were so many ways that that this data had been previously researched and visualised in a range of disiplines - Statistics, Machine Learning, Data Representation, Data Visulaisation to name a few. It was difficult to wrap my head around how this seemingly simple set of flower types and their four common, but variable attributes, were a recognised building block of some of the most intricate and complex tools that are used in computing and data science today.
 After some initial headscratching google searchs I decided to start at the beginning and have a look at Fishers origial report - this helped a little as it really showed me he was just looking at these 150 flowers as a specific data set and not trying to gleen any information that was not already supplied by the numbers provided to him, even if some of the mathamathics involved was beyond my comprehension. From my reading of the original report, i deduced that Fisher was outlining, that by interpreting the data from these 3 species of Iris', we could identify the species of any of these iris' by using the measurements of the Sepal and Petal. 
 This gave me a little confidence in the sense that I should just start from the begining with no preconcieved notions about what data was going to show me and just begin to use the skills I had aquired in my short time learning python to generate a picture of what the data was trying to display. I could dive into the further uses for how the method of my analysis could be used in other applications at a later time.
 
-Once I felt I had done adaquete research on what the data was I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the data stored. I decided CSV was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
-From there I did some more research and reviewed some previous labs that had touched on CSV data during the course. There was so much I decided to create a new bookmarks folder in Chrome called "Pandas Project Bookmarks" - and I edited the names so it was clear what the bookmark was for(this was not always clear by the URL or given heading).
+Once I felt I had done adaquete research on what the data was I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the dataset stored. I decided downloading a CSV file of the data was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
+From there I did some more research and reviewed some previous labs that had touched on CSV data during the course. Once I had downloaded the dataset I began to review the course material provided for reading in CSV files using Python, and of course using internet searchs and tools like [Real Python](https://realpython.com/python-csv/) and [W3Schools](https://www.w3schools.com/python/pandas/pandas_csv.asp) to guide me and give me ideas.
 
 ### First Analysis
  The first thing I did  was jump into making histograms and scatter plots and try to study them to get some insight into the data.  I quickly realised this was a mistake. I was not really able to analyse the plots as I had not summarised the basic data behind the graphs I was generating.
  I found an extremly useful function in the pandas libary called describe().  This gave me some basic statistics on the data set such as mean, max, min and standard deviations.
  From these figures I could begin to do some early analysis.
+
+![](Images/TotalSummary.png)
+
   - The biggest gap between the min and max values were in the petal lengths and sepal lengths - this held through with the varience in the standard diviation.
-  - From the Mean data I could see that sepal lenght and widths were, in relative terms, significatly larger than the petal counterparts
-  - Standard Deviations showed that there was a higher varience in the petal lenght and width than the sepal lenght and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
+  - From the Mean data I could see that sepal lengths and widths were, in relative terms, significatly larger than the petal counterparts
+  - Standard Deviations showed that there was a higher varience in the petal length and width than the sepal length and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
 
 ### Viualisation and Analysis of Plots
 At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code from another project "Datagatherer2357" that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
