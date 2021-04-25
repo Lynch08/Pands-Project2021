@@ -7,10 +7,16 @@ Topic is research and investigation of Fishers Iris Dataset.
 - [Planned Project Outcomes](https://github.com/Lynch08/Pands-Project2021#planned-project-outcomes)
 - [The Repository Content](https://github.com/Lynch08/Pands-Project2021#the-repository-content)
 - [Python and Libaries Used](https://github.com/Lynch08/Pands-Project2021#python-and-the-libaries-used)
+- [Building and Running analysis.py][https://github.com/Lynch08/Pands-Project2021#building-and-running-analysispy]
 - [Initial Research](https://github.com/Lynch08/Pands-Project2021#initial-research)
 - [First Analysis](https://github.com/Lynch08/Pands-Project2021#first-analysis)
-- [Visualisation and Analysis](https://github.com/Lynch08/Pands-Project2021#viualisation-and-analysis-of-plots)
+- [Visualisation and Analysis of Plots](https://github.com/Lynch08/Pands-Project2021#viualisation-and-analysis-of-plots)
 - [Correlations](https://github.com/Lynch08/Pands-Project2021#correlations)
+- [Summary and Conslusions of the Dataset](https://github.com/Lynch08/Pands-Project2021#summary-and-conclusions-of-the-data-set)
+- [Machine Learning using the Iris Dataset](https://github.com/Lynch08/Pands-Project2021#machine-learning-using-the-iris-data-set)
+- [Problems encountered with Coding](https://github.com/Lynch08/Pands-Project2021#problems-encountered-with-coding)
+-[Problems encountered with Data Analysis](https://github.com/Lynch08/Pands-Project2021#problems-encountered-with-data-analysis)
+- [Citations](https://github.com/Lynch08/Pands-Project2021#citations)
 
 ### Introduction to the Iris Dataset
 This is a project that is going to look at the data that is commonly known as the Iris Flower Dataset or Fishers Iris dataset. 
@@ -127,6 +133,7 @@ I used a box plot and swarmplots (4 swarm plots that showed the distribution by 
 Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
 
 ![](Images/Boxplot.png)
+
 A boxplot is a way to show a five number summary in a chart. The main part of the chart (the “box”) shows where the middle portion of the data is: the interquartile range. At the bottom of the box, you find the first quartile (the 25% mark) and the third quartile (top) (the 75% mark). The bottom of the chart (at the end of the bottom “whisker”) is the minimum (the smallest number in the set) and the top is the maximum (the largest number in the set). Finally, the median is represented by a vertical bar in the center of the box.
 
 I found the swarmplots below a good way to  visualise the distribution.
@@ -166,19 +173,19 @@ It was a good learning expierence as it taught me not to take for granted the re
 - Simpsons Paradox can lead you to inccorrect assumptions, so beware how other variables can impact the correlation between two other variables.
 
 ### Machine Learning using the Iris data set
-During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithams that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[kaggle](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
+During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithams that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[[kaggle]](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
 
 I decided to add an example to this project although it is slighly outside the scope.
 For this I created a seperate program called machineLearning.py. This program is a basic example of "Supervised Learning" using the ScikitLearn Libary from python.
 
 I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intracices of the algorithams without any previous experience. However I found it facinating and was astounded that these algorithmic tools were not that difficult to use, even if you didnt really fully understand the mathamatics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
 
-The algorithm I chose for my example was a decision tree classifier algorithm. I found that it was one of the easier algorithms to comprehend and found a good relateable example of how it works here,[stackabuse](https://stackabuse.com/decision-trees-in-python-with-scikit-learn/). 
+The algorithm I chose for my example was a decision tree classifier algorithm. I found that it was one of the easier algorithms to comprehend and found a good relateable example of how it works here,[[stackabuse]](https://stackabuse.com/decision-trees-in-python-with-scikit-learn/). 
 The ScikitLearn tool will analyse or "learn" about the data set using regressional analysis.
 The program will then ask the user to input new measurements for the Seplal and Petal lengths and widths, and from what it has learned about the previous data set make a pridiction of what the species of Iris is based on the new values.
 It will also give the user an indication of the accurcy of its prediction.
 
-It should be noted the idea and code for this example came from a previous GMIT student [Datagatherer2357](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
+It should be noted the idea and code for this example came from a previous GMIT student [[Datagatherer2357]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
 
 
 
@@ -198,10 +205,6 @@ It should be noted the idea and code for this example came from a previous GMIT 
  -  Volume of data - there was so much data and research done on the Iris Data set it was a little daunting to try to figure out where to begin. However it was a lot of comfort to be part of the discord group with my classmates to see I was not the only one that had this anxiety. This along with the time given to complete the project, and being able to refer back to my labs, really helped me to get through it bit by bit.
 - Math - It had been awhile since I had tried my hand at math that could not be done by a simple calculator. Some terms such as Standard Divation were a little frightening at the beginning, luckaily YouTube was a great help here to get me reaquainted with the basics once again. Once I was comfortable with the basics I was able to see how these were really valuabele when applied to the dataset and allowed me to make assumtions and clear analyictical statements from what the data was experessing through these mathamatical functions
  
-  
-
-
-
 ### Citations
 1. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 2. https://github.com/venky14/Machine-Learning-with-Iris-Dataset
