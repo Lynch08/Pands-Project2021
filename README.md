@@ -35,7 +35,7 @@ From initial research it was clear that this dataset has been analysed in depth 
 ### The Repository Content
   - README File that contains a description of the dataset and its history. Also includes the tools used in the completion of the project and an explanation of the code and how I proceeded to analyse the data
   - Iris data file. This is the data set that was analysed. This was read by the programs using the PANDAS liberary in python.
-  - The programs that I used in analysing and displaying the data. These included comments to show my understanding of the code and the were vital when documenting my analytical process.
+  - analysis.py - The program that I used in analysing and displaying the data. These included comments to show my understanding of the code and the were vital when documenting my analytical process.
 
 ### Python and the Libaries Used
 Python programming language is acclaimed for its capacity of handling large amount of data in scientific community of different specialisation. Its natural functionality has been extended by development of external libraries dedicated for specific purposes. Below are listed several I used for accomplishment of this project.
@@ -52,9 +52,9 @@ Matplotlib is a plotting library for the Python programming language and its num
 - Seaborn: 
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
-### Bulding and Running analysis.py
+### Building and Running analysis.py
 I went through many iterations of code before I came to my final draft.
-I first began with wildly long ways of producing histograms for each individual histograph and plots with duplicate code all over my program. This became not only confusing for myself to read, even with comments, it became frustrating to run and test. In the end, I tried to make the program as user friendly and as flexible as possible. 
+I first began with wildly long ways of producing histograms for each individual histograph and plots with duplicate code all over my program. This became not only confusing for myself to read, even with comments, it became frustrating to run and test. In the end, I tried to make the code as readable and the program as user friendly and as flexible as possible. 
 To run the code you will need a tool to run a python program(Python Version 3.0 or above). It was built and tested on Visual Studio Code, but can be run on other tools such as Idle or Cmdr.
 
 Once you run the program it will automatically output a text file to the folder you ran the code from called [summary.txt](https://github.com/Lynch08/Pands-Project2021/blob/main/summary.txt). This includes
@@ -62,9 +62,10 @@ Once you run the program it will automatically output a text file to the folder 
 - A summary of the data set - broken down by the variables and species to for easier comparison
 - A summary of the data set - broken down by individual species
 - A summary of the correlations in the data set - broken down by individual species. 
+
 Every time you run the program this summary.txt will be created if it does not exist, if summary.txt exists, the file will overwrite and save every time the program is run.
 
-Once the summmary output has been completed the user will be offered a Display Menu where they will have the option to either view individually or in sequence, or save, all the plots used for my analysis below.
+Once the summary output has been completed the user will be offered a Display Menu where they will have the option to either view individually or in sequence, or save, all the plots used for my analysis below.
 
 ![](Images/Displaymenu.PNG)
 
@@ -78,7 +79,7 @@ There were so many ways that that this data had been previously researched and v
 After some initial headscratching google searchs I decided to start at the beginning and have a look at Fishers origial report - this helped a little as it really showed me he was just looking at these 150 flowers as a specific data set and not trying to gleen any information that was not already supplied by the numbers provided to him, even if some of the mathamathics involved was beyond my comprehension. From my reading of the original report, i deduced that Fisher was outlining, that by interpreting the data from these 3 species of Iris', we could identify the species of any of these iris' by using the measurements of the Sepal and Petal. 
 This gave me a little confidence in the sense that I should just start from the begining with no preconcieved notions about what data was going to show me and just begin to use the skills I had aquired in my short time learning python to generate a picture of what the data was trying to display. I could dive into the further uses for how the method of my analysis could be used in other applications at a later time.
 
-Once I felt I had done adaquete research on what the data was I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the dataset stored. I decided downloading a CSV file of the data was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
+Once I felt I had done adaquete research on what the data was, I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the dataset stored. I decided downloading a CSV file of the data was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
 From there I did some more research and reviewed some previous labs that had touched on CSV data during the course. Once I had downloaded the dataset I began to review the course material provided for reading in CSV files using Python, and of course using internet searchs and tools like [Real Python](https://realpython.com/python-csv/) and [W3Schools](https://www.w3schools.com/python/pandas/pandas_csv.asp) to guide me and give me ideas.
 
 ### First Analysis
@@ -93,29 +94,30 @@ From there I did some more research and reviewed some previous labs that had tou
   - Standard Deviations showed that there was a higher varience in the petal length and width than the sepal length and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
 
 ### Viualisation and Analysis of Plots
-At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code from another project "Datagatherer2357" that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
+At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.
 
 ![](Images/Histograms.png)
 ![](Images/Barplot.png)
 
 
 The plots above confirmed my intitial analysis. The histogram and barchart both showed that although the Sepal had the higher maximum values in its variables (length and width) the varience, or standerd deviation was notably less between the species than that of the petal. This indicated to me once again, that if I was ever to give advice to an aspiring botenist about the difference between iris species, it would be "look at the petal". 
-The histogrphs indicated the varience spread with wide data range on the petal measurments and the barchart then confirmed this clearly showing the setsosa was far smaller than the other two species. In contrast the sepal values were far closer together in the barchart and the histogram showed the varience was much more clustered.
+The histographs indicated the varience spread with wide data range on the petal measurments and the barchart then confirmed this clearly showing the setsosa was far smaller than the other two species. In contrast the sepal values were far closer together in the barchart and the histogram showed the varience was much more clustered.
 
 Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable, and distingusihes by object type(species).
 A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python.
 
 ![](Images/Pairplot.png)
-![](Images/Summary%20Petal.png)
-![](Images/Summary%20Sepal.png)
 
 When looking at the pairplot scatter plots it is clear from a glance that Iris-Setsosa is linerary sepreaple in almost all cases from the other species. Both sepal and petal length are significanly smaller than the Iris-Versicolor and Iris-Virginca and from the histogram we again can clearly see the Iris-setsosa is far smaller and the vairence of the petal lenght was smaller so most likly more distinct. 
 As I did my research on how to read these plots correctly, I was a little fearful I would make some false assumptions based off my limited experience analyzing data in this format. To verify my analysis I went back to the discribe function, however this time I grouped the data by species and ran it to make it easier for comparison. In doing this I was able to make assumpthions based off my reading of the plots and verify my assumptions with the figures provided - this was added to my data summary (summary.txt file).
 From the pairplot and the breakdown of the numeriacl data by species I reached some of my first conclusions.
 
+![](Images/SummaryPetal.PNG)
+![](Images/SummarySepal.png)
+
 - Because of the distintly small size and varierence of the Iris-Setsosa petals they are easily more distingtive then the other two species in the data set.
 - There is some crossover (not linerary seperable) of the Iris-Versicolor and Iris-Virginica however from the graphs and data alredy generated to this point we can see that some trends are beginning to emerge.
-- The Iris-Virgina seemed, in most cases to have a bigger petals and sepals than the Iris-Versicolor, this was reflected in the numberical data, as all mean data across the 4 variables was higher, however from the plots and the cross over between the max and min values of the variables of the 2 speciecs, it was evident the distingtion between these was not going to be as clearcut.
+- The Iris-Virgina seemed, in most cases to have a bigger petals and sepals than the Iris-Versicolor, this was reflected in the numerical data, as all mean data across the 4 variables was higher, however from the plots and the cross over between the max and min values of the variables of the 2 speciecs, it was evident the distingtion between these was not going to be as clearcut.
 
 I then began to play with other types of plots that were really new to me. I had at least a basic understanding of histograms, bargraphs and scatter plots and they were easier enough to read, but now as I was diving deeper into the analysis I was coming across analysis tools I had zero experience with such as box plots, swarm plots and heat maps.
 
