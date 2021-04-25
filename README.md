@@ -139,16 +139,18 @@ You can clearly see that although the sepal lengths have a wider varience, the c
 
 ### Correlations
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
-Where the correlation is 1 or 'reddest' we can see that the variable data will be the same the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
+Where the correlation is 1 or 'reddest' we can see that the variable data will be the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
 
 ![](Images/Heatmap.png)
 
 The least correlation happens between petal values and sepal width (-.42 and -.36). 
-We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 i began to assume this is the case across all species.
+We can see the highest correlation between the between petal length and width (.96) - this tells us as one gets larger, so does the other, and this number is so close to 1 I began to assume this is the case across all species.
 Surprisingly to me, there was a high correlation between the petal values and the sepal length (.87 and .82, petal length and width respectivly) This correlation was surprising as it was so low with the sepal width. 
 I was able to conclude from this data that the sepal width did not strongly correlate with any of the other variables.
-However because my interest was now peaked by the fact the sepal variables did not strongly correlate, I decided once again, to go back to the discribe() function to create an indidual table for each species - this was added to the summary.txt file. This was not great for visualisation and I had found the heat map far more user friendly, so I decided to generate one for each species. The compbination of the text summary and the heatmaps, led to some very intersting findings.
-Firstly the correlations that I had found with the overall dataset did not seem to carry over to the correlations of the grouped species. This led me to double check my data and do some googeling to ensure my code was correct. From my researh I found that this was a known phenomenon with the dataset, and may other datasets called Simpsons Paradox.
+
+However because my interest was now peaked by the fact the sepal variables did not strongly correlate, I decided once again, to go back to the discribe() function to create an indidual table for each species - this was added to the summary.txt file. This was not great for visualisation and I had found the heat map far more user friendly, so I decided to generate one for each species. The combination of the text summary and the heatmaps, led to some very intersting findings.
+
+Firstly the correlations that I had found with the overall dataset did not seem to carry over to the correlations of the grouped species. This led me to double check my data and do some googeling to ensure my code was correct. From my research I found that this was a known phenomenon with the dataset, and many other datasets called Simpsons Paradox.
 Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. https://www.britannica.com/topic/Simpsons-paradox
 This was interesting and led me to reading up more on Simpsons Paradox.
 It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.
@@ -156,7 +158,28 @@ It was a good learning expierence as it taught me not to take for granted the re
 ![](Images/All3Heatmaps.PNG)
 ![](Images/All3Summaries.PNG)
 
-### Summary and Conclusions
+### Summary and Conclusions of the data set
+- The Iris-Setsosa is a distintly different species to the Iris-Versicolor and Iris-Virginica
+- There is much more data overlap with the Iris-Versicolor and Iris-Virginica
+- The Petal Length and Width are much clearer distinguishing attributes than the Sepal Length and Width
+- It is vital to verify your findings using numerical statical analysis and not to depend too heavily on the visualisation, and vica versa.
+- Simpsons Paradox can lead you to inccorrect assumptions, so beware how other variables can impact the correlation between two other variables.
+
+### Machine Learning using the Iris data set
+During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithams that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[kaggle](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
+
+I decided to add an example to this project although it is slighly outside the scope.
+For this I created a seperate program called machineLearning.py. This program is a basic example of "Supervised Learning" using the ScikitLearn Libary from python.
+
+I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intracices of the algorithams without any previous experience. However I found it facinating and was astounded that these algorithmic tools were not that difficult to use, even if you didnt really fully understand the mathamatics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
+
+The algorithm I chose for my example was a decision tree classifier algorithm. I found that it was one of the easier algorithms to comprehend and found a good relateable example of how it works here,[stackabuse](https://stackabuse.com/decision-trees-in-python-with-scikit-learn/). 
+The ScikitLearn tool will analyse or "learn" about the data set using regressional analysis.
+The program will then ask the user to input new measurements for the Seplal and Petal lengths and widths, and from what it has learned about the previous data set make a pridiction of what the species of Iris is based on the new values.
+It will also give the user an indication of the accurcy of its prediction.
+
+It should be noted the idea and code for this example came from a previous GMIT student [Datagatherer2357](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
+
 
 
   ### Problems encountered with coding
@@ -197,4 +220,6 @@ It was a good learning expierence as it taught me not to take for granted the re
 15. https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/#:~:text=Back%20to%20Top-,How%20to%20Read%20a%20Box%20Plot,(the%2075%25%20mark).
 
 
-
+https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project  
+https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms
+https://stackabuse.com/decision-trees-in-python-with-scikit-learn/
