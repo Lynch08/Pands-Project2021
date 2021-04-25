@@ -5,7 +5,12 @@ Topic is research and investigation of Fishers Iris Dataset.
 ## Table of Contents
 - [Introduction](https://github.com/Lynch08/Pands-Project2021#introduction)
 - [Planned Project Outcomes](https://github.com/Lynch08/Pands-Project2021#planned-project-outcomes)
-
+- [The Repository Content](https://github.com/Lynch08/Pands-Project2021#the-repository-content)
+- [Python and Libaries Used](https://github.com/Lynch08/Pands-Project2021#python-and-the-libaries-used)
+- [Initial Research](https://github.com/Lynch08/Pands-Project2021#initial-research)
+- [First Analysis](https://github.com/Lynch08/Pands-Project2021#first-analysis)
+- [visialisation and Analysis](https://github.com/Lynch08/Pands-Project2021#viualisation-and-analysis-of-plots)
+- [Correlations]()
 ### Introduction
 This is a project that is going to look at the data that is commonly known as the Iris Flower Dataset or Fishers Iris dataset. 
 During the research phase for this project I found that the study of this dataset seems to be the initial starting point for any would-be statistician or individual interested in studying Machine Learning and/or data visualisation.
@@ -95,7 +100,7 @@ I should say at this point I was getting a litte frustrated with having to run m
 I used a box plot and swarmplots(4 swarm plots that showed the distribution by species) to demonstrate the the distribution differences between each of the variables and the species.
 Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. 
 
-##### Correlations of Variables
+### Correlations
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
 Where the correlation is 1 or 'reddest' we can see that the variable data will be the same the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is.
 
