@@ -40,7 +40,7 @@ From initial research it was clear that this dataset has been analysed in depth 
 
 ### The Repository Content
   - README File that contains a description of the dataset and its history. Also includes the tools used in the completion of the project and an explanation of the code and how I proceeded to analyse the data
-  - Iris data file. This is the data set that was analysed. This was read by the programs using the PANDAS liberary in python.
+  - Iris data file. This is the data set that was analysed. This was read by the programs using the PANDAS library in python.
   - analysis.py - The program that I used in analysing and displaying the data. These included comments to show my understanding of the code and the were vital when documenting my analytical process.
   - Images Folder - Images of the plots, graphs, summary and others used in the project 
 
@@ -161,7 +161,7 @@ However because my interest was now peaked by the fact the sepal variables did n
 Firstly the correlations that I had found with the overall dataset did not seem to carry over to the correlations of the grouped species.
 
 Specifically while the overall data set showed correlation between the petal length and width, this was not reflected when broken down by species - it dropped below the overall number of .96 in all cases.
-Secondly, the weakest correlation of the overall data set went from being negative to positive across all species, most notably with the Iris-Setsosa.
+Secondly, the weakest variable for correlation of the overall data set, the Sepal width, went from being negative to positive across all species, most notably with the Iris-Setsosa.
 This trend continued across almost all variables where the inital correlations from the overall dataset were remarkably different to correlations of the variables when analysed by species. 
 
 ![](Images/All3Heatmaps.PNG)
@@ -191,6 +191,8 @@ The algorithm I chose for my example was a decision tree classifier algorithm. I
 The ScikitLearn tool will analyse or "learn" about the data set using regressional analysis.
 The program will then ask the user to input new measurements for the Sepal and Petal lengths and widths, and from what it has learned about the previous data set make a prediction of what the species of Iris is based on the new values.
 It will also give the user an indication of the accuracy of its prediction.
+
+![](Images/MachineLearning.PNG)
 
 It should be noted the idea and code for this example came from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
 
@@ -247,3 +249,4 @@ It should be noted the idea and code for this example came from a previous GMIT 
 28. https://www.youtube.com/watch?v=bmq7hkvfkVw (Random Forest Model - Iris Data)
 29. https://stackabuse.com/decision-trees-in-python-with-scikit-learn/
 30. https://www.youtube.com/watch?v=BD3-2VO3Mpg (Decision Tree Classifier in Python (IRIS data) | Machine Learning)
+31. https://github.com/jennifer-ryan/iris-data-set-project (old GMIT pandas Project)
