@@ -86,7 +86,7 @@ From there I did some more research and reviewed some previous labs that had tou
  I found an extremly useful function in the pandas libary called describe().  This gave me some basic statistics on the data set such as mean, max, min and standard deviations.
  From these figures I could begin to do some early analysis.
 
-![](Images/TotalSummary.png)
+![](Images/TotalSummary.PNG)
 
   - The biggest gap between the min and max values were in the petal lengths and sepal lengths - this held through with the varience in the standard diviation.
   - From the Mean data I could see that sepal lengths and widths were, in relative terms, significatly larger than the petal counterparts
