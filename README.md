@@ -22,7 +22,7 @@ Topic is research and investigation of Fishers Iris Dataset.
 This is a project that is going to look at the data that is commonly known as the Iris Flower Dataset or Fishers Iris dataset. 
 During the research phase for this project I found that the study of this dataset seems to be the initial starting point for any would-be statistician or individual interested in studying Machine Learning and/or data visualisation.
 The Dataset came to the public forefront in 1936 when statistician Sir Ronal Aylmer Fisher published his report “The Use of Multiple Measurements in Taxonomic Problems” in the journal Annals of Eugenics.
-It should be noted that Fisher did not collect the data himself, the data-source was credited to Dr Edgar Anderson who collected the data at the Gaspé Peninsula in Canada.[1] (https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
+It should be noted that Fisher did not collect the data himself, the data-source was credited to Dr Edgar Anderson who collected the data at the Gaspé Peninsula in Canada.[[1]](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
 The dataset in itself is relatively small - 3 classes (different Iris Species - Iris Setosa, Iris Versicolour and Iris Virginica) with 50 samples of each and 4 variables of each sample (the length and width of the sepal and the length and width of the petal in centimetres). 
 One species, Iris Setosa, is "linearly separable" from the other two. This means that we can draw a line between Iris Setosa samples and samples corresponding to the other two species.
@@ -45,19 +45,19 @@ From initial research it was clear that this dataset has been analysed in depth 
   - Images Folder - Images of the plots, graphs, summary and others used in the project 
 
 ### Python and the Libaries Used
-Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. [2](https://www.python.org/doc/essays/blurb/) Its natural functionality has been extended by development of external libraries dedicated for specific purposes.[3](https://www.mygreatlearning.com/blog/open-source-python-libraries/#:~:text=Python%20Libraries%20are%20a%20set,data%20manipulation%20applications%20and%20more.) Below are listed several python libaries I used for accomplishment of this project.
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. [[2]](https://www.python.org/doc/essays/blurb/) Its natural functionality has been extended by development of external libraries dedicated for specific purposes.[[3]](https://www.mygreatlearning.com/blog/open-source-python-libraries/#:~:text=Python%20Libraries%20are%20a%20set,data%20manipulation%20applications%20and%20more.) Below are listed several python libaries I used for accomplishment of this project.
 
 - Pandas:
-Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It was used specifically in this project to read in the data from the csv file used.[4](https://pypi.org/project/pandas/)
+Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It was used specifically in this project to read in the data from the csv file used.[[4]](https://pypi.org/project/pandas/)
 
 - Numpy:
-NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.[5](https://numpy.org/)
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.[[5]](https://numpy.org/)
 
 - Matplotlib:
-Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.[6](https://matplotlib.org/)
+Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.[[6]](https://matplotlib.org/)
 
 - Seaborn: 
-Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.[7](https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,can%20read%20the%20introductory%20notes.)
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.[[7]](https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,can%20read%20the%20introductory%20notes.)
 
 ### Building and Running analysis.py
 I went through many iterations of code before I came to my final draft.
@@ -83,7 +83,7 @@ If any other valid option is entered, the program will display or save the relev
 ### Initial Research
 As this was my first programming project I found the initial research of this dataset a little daunting.
 There were so many ways that that this data had been previously researched and visualised in a range of disiplines - Statistics, Machine Learning, Data Representation, Data Visulaisation to name a few. It was difficult to wrap my head around how this seemingly simple set of flower types and their four common, but variable attributes, were a recognised building block of some of the most intricate and complex tools that are used in computing and data science today.
-After some initial headscratching google searchs I decided to start at the beginning and have a look at Fishers origial report[8](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x) - this helped a little as it really showed me he was just looking at these 150 flowers as a stand alone data set and not trying to gleen any information that was not already supplied by the numbers provided to him, even if some of the mathamathics involved was beyond my comprehension. From my reading of the original report, i deduced that Fisher was outlining, that by interpreting the data from these 3 species of Iris', we could identify the species of any of these iris' by using the measurements of the Sepal and Petal. 
+After some initial headscratching google searchs I decided to start at the beginning and have a look at Fishers origial report[[8]](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x) - this helped a little as it really showed me he was just looking at these 150 flowers as a stand alone data set and not trying to gleen any information that was not already supplied by the numbers provided to him, even if some of the mathamathics involved was beyond my comprehension. From my reading of the original report, i deduced that Fisher was outlining, that by interpreting the data from these 3 species of Iris', we could identify the species of any of these iris' by using the measurements of the Sepal and Petal. 
 This gave me a little confidence in the sense that I should just start from the beginning with no preconcieved notions about what data was going to show me and just begin to use the skills I had aquired in my short time learning python to generate a picture of what the data was trying to display. I could dive into the further uses for how the method of my analysis could be used in other applications at a later time.
 
 Once I felt I had done adaquete research on what the data was, I decided to try some simple code to output some plots, if for nothing else to have some "physical" evidence that I was making progress. The first decision I had to make was how did I want to have the dataset stored. I decided downloading a CSV file of the data was my best option - I was familiar with the CSV format from some light database work I had done in my professional life (importing and exporting data mainly - no real analysis) and this would be the format I would be continuing to use professionaly, so that decision was one of the easier ones I would make.
@@ -91,7 +91,7 @@ From there I did some more research and reviewed some previous labs that had tou
 
 ### First Analysis
  The first thing I did  was jump into making histograms and scatter plots and try to study them to get some insight into the data.  I quickly realised this was a mistake. I was not really able to analyse the plots as I had not summarised the basic data behind the graphs I was generating.
- I found an extremly useful function in the pandas libary called describe().[9](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)  This gave me some basic statistics on the data set such as mean, max, min and standard deviations.
+ I found an extremly useful function in the pandas libary called describe().[[9]](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)  This gave me some basic statistics on the data set such as mean, max, min and standard deviations.
  From these figures I could begin to do some early analysis.
 
 ![](Images/TotalSummary.PNG)
@@ -101,7 +101,7 @@ From there I did some more research and reviewed some previous labs that had tou
   - Standard Deviations showed that there was a higher varience in the petal length and width than the sepal length and width - because of this higher varience level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analyis would be required.
 
 ### Viualisation and Analysis of Plots
-At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.[10](https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)[11](https://www.datacamp.com/community/tutorials/histograms-matplotlib)[12](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project)
+At first I had written code to display 4 histograms of each plot indivdually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distingtions between variables.[[10]](https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)[[11]](https://www.datacamp.com/community/tutorials/histograms-matplotlib)[[12]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project)
 
 ![](Images/Histograms.png)
 ![](Images/Barplot.png)
@@ -111,7 +111,7 @@ The plots above confirmed my intitial analysis. The histogram and barchart both 
 The histographs indicated the varience spread with wide data range on the petal measurments and the barchart then confirmed this clearly showing the setsosa was far smaller than the other two species. In contrast the sepal values were far closer together in the barchart and the histogram showed the varience was much more clustered.
 
 Next I decided to analyse the data using a very simple but effective tool in the seaborn liberary called pairplot - this allows you to visualise the measurements between each variable, and distingusihes by object type(species).
-A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python.[13](https://www.kaggle.com/mervinpraison/seaborn-pairplot-with-iris-dataset)
+A pairplot allows us to see both distribution of single variables (Univariate histograms) and relationships between two variables(Scatter plots). Pair plots are a great method to identify trends for follow-up analysis and, fortunately, are easily implemented in Python.[[13]](https://www.kaggle.com/mervinpraison/seaborn-pairplot-with-iris-dataset)
 
 ![](Images/Pairplot.png)
 
@@ -131,14 +131,14 @@ I then began to play with other types of plots that were really new to me. I had
 I should say at this point I was getting a litte frustrated with having to run my entire program everytime I wanted to see a specific plot for comparison. This led me to creating functions for each of the plots in my code, and creating a display menu so I could call on any specific plot that I wanted easily. From this I got the idea to allow the user to simply display or save all of the plots. This way by running the programme the user could jump back and forth between plots, or save them as a group for later analysis.
 
 I used a box plot and swarmplots (4 swarm plots that showed the distribution by species) to demonstrate the the distribution differences between each of the variables and the species.
-Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. [14](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+Once again the data showed me that there was a much larger distribution of the sepal measuerments. This was reinforcing my earlier analysis that the petal size would be a far better indicator of species based on analysis. [[14]](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
 
 ![](Images/Boxplot.png)
 
-A boxplot is a way to show a five number summary in a chart. The main part of the chart (the “box”) shows where the middle portion of the data is: the interquartile range. At the bottom of the box, you find the first quartile (the 25% mark) and the third quartile (top) (the 75% mark). The bottom of the chart (at the end of the bottom “whisker”) is the minimum (the smallest number in the set) and the top is the maximum (the largest number in the set). Finally, the median is represented by a vertical bar in the center of the box.[15](https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/#:~:text=Back%20to%20Top-,How%20to%20Read%20a%20Box%20Plot,(the%2075%25%20mark))
+A boxplot is a way to show a five number summary in a chart. The main part of the chart (the “box”) shows where the middle portion of the data is: the interquartile range. At the bottom of the box, you find the first quartile (the 25% mark) and the third quartile (top) (the 75% mark). The bottom of the chart (at the end of the bottom “whisker”) is the minimum (the smallest number in the set) and the top is the maximum (the largest number in the set). Finally, the median is represented by a vertical bar in the center of the box.[[15]](https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/#:~:text=Back%20to%20Top-,How%20to%20Read%20a%20Box%20Plot,(the%2075%25%20mark))
 
 I found the swarmplots below a good way to  visualise the distribution.
-You can clearly see that although the sepal lengths have a wider varience, the crossover is far more evident than with the petal. You can also see the petal lengths and widths for the Iris-Setsosa are clearly distinct from the other two species.[16](https://www.kaggle.com/rakesh6184/seaborn-plot-to-visualize-iris-data)
+You can clearly see that although the sepal lengths have a wider varience, the crossover is far more evident than with the petal. You can also see the petal lengths and widths for the Iris-Setsosa are clearly distinct from the other two species.[[16]](https://www.kaggle.com/rakesh6184/seaborn-plot-to-visualize-iris-data)
 ![](Images/SwarmPlotPetalLen.png)
 ![](Images/SwarmPlotPetalWid.png)
 ![](Images/SwarmPlotSepalLen.png)
@@ -147,7 +147,7 @@ You can clearly see that although the sepal lengths have a wider varience, the c
 
 ### Correlations
 I used a heat map to help me with analysing the correlations between the variables. Although the data is duplicated on this map I found an extremly helpful visualisation tool and easy to read.
-Where the correlation is 1 or 'reddest' we can see that the variable data will be the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is. [17](https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook  )
+Where the correlation is 1 or 'reddest' we can see that the variable data will be the same so the correlation will match - the further the figure is away from 1 (going from red to blue to purple), the less correlation there is. [[17]](https://www.kaggle.com/kamrankausar/iris-dataset-ml-and-deep-learning-from-scratch/notebook  )
 
 ![](Images/Heatmap.png)
 
@@ -168,9 +168,9 @@ This trend continued across almost all variables where the inital correlations f
 ![](Images/All3Summaries.PNG)
 
 This led me to double check my data and do some googeling to ensure my code was correct. From my research I found that this was a known phenomenon with the dataset, and many other datasets called Simpsons Paradox.
-Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. [18](https://www.britannica.com/topic/Simpsons-paradox)
+Simpson’s paradox, also called Yule-Simpson effect, in statistics, an effect that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. [[18]](https://www.britannica.com/topic/Simpsons-paradox)
 This was interesting and led me to reading up more on Simpsons Paradox.
-It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.[19](https://medium.data4sci.com/causal-inference-part-i-415538211aa1)
+It was a good learning expierence as it taught me not to take for granted the relationship between two variables if there was one or more other variable in the dataset. My further research on this infromed me that this was not a particulary rare occurrence in the world of Data Analysis.[[19]](https://medium.data4sci.com/causal-inference-part-i-415538211aa1)
 
 ### Summary and Conclusions of the data set
 - The Iris-Setsosa is a distintly different species to the Iris-Versicolor and Iris-Virginica
@@ -180,7 +180,7 @@ It was a good learning expierence as it taught me not to take for granted the re
 - Simpsons Paradox can lead you to inccorrect assumptions, so beware how other variables can impact the correlation between two other variables.
 
 ### Machine Learning using the Iris data set
-During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithams that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[20](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
+During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithams that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[[20]](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
 
 I decided to add an example to this project although it is slighly outside the scope.
 For this I created a seperate program called machineLearning.py. This program is a basic example of "Supervised Learning" using the ScikitLearn Libary from python.
@@ -192,24 +192,24 @@ The ScikitLearn tool will analyse or "learn" about the data set using regression
 The program will then ask the user to input new measurements for the Seplal and Petal lengths and widths, and from what it has learned about the previous data set make a pridiction of what the species of Iris is based on the new values.
 It will also give the user an indication of the accurcy of its prediction.
 
-It should be noted the idea and code for this example came from a previous GMIT student [[Datagatherer2357]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
+It should be noted the idea and code for this example came from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
 
 
 ## Problems encountered
 
   ### Problems encountered with coding
-   - I had some issues trying to seperate the data out for the correlation part, it took a lot of googleling and reading up on the groupby() function.
+   - I had some issues trying to seperate the data out for the correlation part, it took a lot of googleling and reading up on the groupby() function.[[21](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
    - One of my regrets is that I failed to get the swarmplots all on to one .png. I did a lot of research but could not seem to nail it. It led to me having to create 2 functions, for both the swarm plots and species specific heat maps, one for show and one for saving. I would have liked that to be neater.
    - Old code - I found that some of the code I encountered was using old paramaters in the functions, I had to make some changes and read up on how to correct this. 
    Example:  
    UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`. 
    - Rerunning my code - I found it extremly irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
    1. Set the first input in my summary to 'w', and the rest to 'a', this allowed me to overwrite and append every time so every time I ran the program I was able to test that my summary.txt file had not been corrupted
-   2. I created my plots as functions this allowed me to call them when required and gave me flexability of when I wanted to save and show.
-   3. Added looping and an exit button for my program - this was really helpful, I added a while loop that allowed me to run again without having to rerun the program from the command line and an exit input (0) for my program, this allowed me to get out quickly to make a change when i desiered. 
+   2. I created my plots as functions this allowed me to call them when required and gave me flexability of when I wanted to save and show.[[22]](https://realpython.com/defining-your-own-python-function/)
+   3. Added looping and an exit button for my program - this was really helpful, I added a while loop that allowed me to run again without having to rerun the program from the command line and an exit input (0) for my program, this allowed me to get out quickly to make a change when I desiered.[[23]](https://realpython.com/python-while-loop/) 
 
 ### Problems encountered with data analysis
- - Unfamiliarity with some of the tools. Outside my obvious rookie user level with python I found some of the plots and graphs tough to analyse at the beginning. I could understand the noraml histograms and scatter plots to a certain level but I had to do some research on things like box plots, swarm plots and heat maps. However once I had done the research I found them extremly valuable, especially the swarm plots and heat maps.
+ - Unfamiliarity with some of the tools. Outside my obvious rookie user level with python I found some of the plots and graphs tough to analyse at the beginning. I could understand the noraml histograms and scatter plots to a certain level, as I cited above, I had to do some research on things like box plots, swarm plots and heat maps. However once I had done the research I found them extremly valuable, especially the swarm plots and heat maps.
  -  Volume of data - there was so much data and research done on the Iris Data set it was a little daunting to try to figure out where to begin. However it was a lot of comfort to be part of the discord group with my classmates to see I was not the only one that had this anxiety. This along with the time given to complete the project, and being able to refer back to my labs, really helped me to get through it bit by bit.
 - Math - It had been awhile since I had tried my hand at math that could not be done by a simple calculator. Some terms such as Standard Divation were a little frightening at the beginning, luckaily YouTube was a great help here to get me reaquainted with the basics once again. Once I was comfortable with the basics I was able to see how these were really valuabele when applied to the dataset and allowed me to make assumtions and clear analyictical statements from what the data was experessing through these mathamatical functions
  
@@ -234,3 +234,16 @@ It should be noted the idea and code for this example came from a previous GMIT 
 18.	https://www.britannica.com/topic/Simpsons-paradox
 19.	https://medium.data4sci.com/causal-inference-part-i-415538211aa1
 20.	https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms
+21.	https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html
+22.	https://realpython.com/defining-your-own-python-function/
+23.	https://realpython.com/python-while-loop/
+
+### Other Links used in Research
+
+24. https://www.youtube.com/watch?v=p5xThuN3P0I (Standard Deviation explained)
+25. https://www.youtube.com/watch?v=FLuqwQgSBDw (Iris Dataset EDA Lecture1@ Applied AI Course)
+26. https://www.youtube.com/watch?v=hd1W4CyPX58 (Getting started in scikit-learn with the famous iris dataset)
+27. https://www.youtube.com/watch?v=HXi9cl5Aq5w (Working With Iris.csv | Iris Data Set In Less Than 10 minutes | Great Learning)
+28. https://www.youtube.com/watch?v=bmq7hkvfkVw (Random Forest Model - Iris Data)
+29. https://stackabuse.com/decision-trees-in-python-with-scikit-learn/
+30. https://www.youtube.com/watch?v=BD3-2VO3Mpg (Decision Tree Classifier in Python (IRIS data) | Machine Learning)
