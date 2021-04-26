@@ -35,7 +35,7 @@ elif classType.predict(flower) == [2]:
 scores = cross_val_score(classType, data, target, cv=10)
 
 result = "The flower is most likely an Iris " + flowerType # Output from Iris classifier learning model
-acc = "Accuracy: %.2f (+/- %.2f)" % (scores.mean()*100, scores.std()*200) # gives us an accuracy score with confidence intervals
+acc = "Accuracy of prediction: %.2f (+/- %.2f)" % (scores.mean()*100, scores.std()*200) # gives us an accuracy score with confidence intervals
 
-print(result, end= ', ') # "end=" used to place a space after the displayed string instead of a newline.
+print(result) #Prints result
 print(acc) # Prints out accuracy estimate 

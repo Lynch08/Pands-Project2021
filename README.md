@@ -39,10 +39,12 @@ From initial research it was clear that this dataset has been analysed in depth 
 5. To learn how to best optimise my time between research, programming, problem-solving and analysis.  
 
 ### The Repository Content
-  - README File that contains a description of the dataset and its history. Also includes the tools used in the completion of the project and an explanation of the code and how I proceeded to analyse the data
-  - Iris data file. This is the data set that was analysed. This was read by the programs using the PANDAS library in python.
+  - README File - This contains a description of the dataset and its history. Also includes the tools used in the completion of the project and an explanation of the code and how I proceeded to analyse the data
+  - Iris data file - This is the data set that was analysed. This was read by the programs using the PANDAS library in python.
   - analysis.py - The program that I used in analysing and displaying the data. These included comments to show my understanding of the code and the were vital when documenting my analytical process.
+  - Summary file - A file that contains summary data of the data set as a whole and broken down by its variables and species.
   - Images Folder - Images of the plots, graphs, summary and others used in the project 
+  - machineLearning.py - A program to show how this data set can be used as an in Machine Learning, with an example of a Machine Learning algorithm. 
 
 ### Python and the Libraries Used
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. [[2]](https://www.python.org/doc/essays/blurb/) Its natural functionality has been extended by development of external libraries dedicated for specific purposes.[[3]](https://www.mygreatlearning.com/blog/open-source-python-libraries/#:~:text=Python%20Libraries%20are%20a%20set,data%20manipulation%20applications%20and%20more.) Below are listed several python libraries I used for accomplishment of this project.
@@ -185,7 +187,7 @@ During my research of this project, time and time again I came across the machin
 I decided to add an example to this project although it is slightly outside the scope.
 For this I created a separate program called machineLearning.py. This program is a basic example of "Supervised Learning" using the ScikitLearn Library from python.
 
-I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intricacies of the algorithms without any previous experience. However I found it fascinating and was astounded that these algorithmic tools were not that difficult to use, even if you did not really fully understand the mathematics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
+I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intricacies of the algorithms without any previous experience or guidence. However I found it fascinating and was astounded that these algorithmic tools were not that difficult to use, even if you did not really fully understand the mathematics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
 
 The algorithm I chose for my example was a decision tree classifier algorithm. I found that it was one of the easier algorithms to comprehend and found a good relatable example of how it works here,[[stackabuse]](https://stackabuse.com/decision-trees-in-python-with-scikit-learn/). 
 The ScikitLearn tool will analyse or "learn" about the data set using regressional analysis.
@@ -194,7 +196,7 @@ It will also give the user an indication of the accuracy of its prediction.
 
 ![](Images/MachineLearning.PNG)
 
-It should be noted the idea and code for this example came from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
+It should be noted the idea and code for this example was adapeted from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
 
 
 ## Problems encountered
