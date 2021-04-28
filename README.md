@@ -100,7 +100,7 @@ From there I did some more research and reviewed some previous labs that had tou
 
   - The biggest gap between the min and max values were in the petal lengths and sepal lengths - this held through with the variance in the standard deviation.
   - From the Mean data I could see that sepal lengths and widths were, in relative terms, significantly larger than the petal counterparts.
-  - Standard Deviations showed that there was a higher a in the petal length and width than the sepal length and width - because of this higher variance level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analysis would be required.
+  - Standard Deviations showed that there was a higher variance in the petal length and width than the sepal length and width - because of this higher variance level I began to wonder if the petal data was going to show me a clearer picture of the difference between species than the sepal data - more analysis would be required.
 
 ### Visualisation and Analysis of Plots
 At first I had written code to display 4 histograms of each plot individually, however from using resources like stackoverflow and seeing other analysis of the dataset I had gone over the top with the code and found a much easier way to display all 4 histograms together in one multivariate display. I also found a really handy bit of code that allowed me to display the data in a bar graph that I found much easier to analyse. This allowed me to make clear distinctions between variables.[[10]](https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib)[[11]](https://www.datacamp.com/community/tutorials/histograms-matplotlib)[[12]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project)
@@ -252,3 +252,4 @@ It should be noted the idea and code for this example was adapeted from a previo
 29. https://stackabuse.com/decision-trees-in-python-with-scikit-learn/
 30. https://www.youtube.com/watch?v=BD3-2VO3Mpg (Decision Tree Classifier in Python (IRIS data) | Machine Learning)
 31. https://github.com/jennifer-ryan/iris-data-set-project (old GMIT pandas Project)
+
