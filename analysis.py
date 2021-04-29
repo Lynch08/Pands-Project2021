@@ -40,6 +40,7 @@ specSum = irisCsv.groupby('species').describe()
 with open ('summary.txt', 'a' ) as f:
     f.write('This is a summary of the data set - broken down by the variables and species to for easier comparison \n')
     f.write(str(specSum))
+    f.write('\n\n\n')
 
 #Breakdown of the data by individual species  
 sumSet = irisCsv_set.describe()
