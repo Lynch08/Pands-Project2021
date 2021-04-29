@@ -179,7 +179,7 @@ It was a good learning experience as it taught me not to take for granted the re
 - There is much more data overlap with the Iris-Versicolor and Iris-Virginica
 - The Petal Length and Width are much clearer distinguishing attributes than the Sepal Length and Width
 - It is vital to verify your findings using numerical statistical analysis and not to depend too heavily on the visualisation, and vice versa.
-- Simpsons Paradox can lead you to inccorrect assumptions, so beware how other variables can impact the correlation between two other variables.
+- Simpsons Paradox can lead you to inccorrect assumptions, so beware how one variable can impact the correlation between two other variables.
 
 ### Machine Learning using the Iris data set
 During my research of this project, time and time again I came across the machine learning and predictive analysis that had been done using this data set. I came across a variety of algorithms that had been used to analyse this data set including, Support Vector Classification(SVM), Nearest Neighbour(K-NN), Decision Tree and Random Forest[[20]](https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms). 
