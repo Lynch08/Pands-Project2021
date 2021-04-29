@@ -1,4 +1,8 @@
 
+#This is an example of machien learning using a decision tree classifier algorithm on the IrisData Set
+#Author: Enda Lynch
+#Code Adapted from former pands student Gareth Duffy - see citation #12 in README
+
 from sklearn import datasets
 from sklearn import tree
 from sklearn.model_selection import cross_val_score
