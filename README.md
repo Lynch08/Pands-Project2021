@@ -187,7 +187,7 @@ During my research of this project, time and time again I came across the machin
 I decided to add an example to this project although it is slightly outside the scope.
 For this I created a separate program called machineLearning.py. This program is a basic example of "Supervised Learning" using the ScikitLearn Library from python.
 
-I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intricacies of the algorithms without any previous experience or guidence. However I found it fascinating and was astounded that these algorithmic tools were not that difficult to use, even if you did not really fully understand the mathematics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
+I will admit that I fell down a bit of a rabbit hole here and probably spent a little too much time trying to understand the intricacies of the algorithms without any previous experience or guidence. However I found it fascinating, and was astounded that these algorithmic tools were not that difficult to use, even if you did not really fully understand the mathematics behind them. However of course for real world usage outside of this project a more comprehensive understanding would be required to be able to stand over the data.
 
 The algorithm I chose for my example was a decision tree classifier algorithm. I found that it was one of the easier algorithms to comprehend and found a good relatable example of how it works here,[[stackabuse]](https://stackabuse.com/decision-trees-in-python-with-scikit-learn/). 
 The ScikitLearn tool will analyse or "learn" about the data set using regressional analysis.
@@ -196,7 +196,8 @@ It will also give the user an indication of the accuracy of its prediction.
 
 ![](Images/MachineLearning.PNG)
 
-It should be noted the idea and code for this example was adapeted from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py)
+It should be noted the idea and code for this example was adapeted from a previous GMIT student pands project [[Duffy, Gareth]](https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project/blob/master/project.py).
+Also I used the iris dataset provided by the ScikitLearn library as it was easier to implement the code - so there may be some very, very slight discrepancies between the data used in analysis.py and machineLearning.py. 
 
 
 ## Problems encountered
@@ -204,18 +205,18 @@ It should be noted the idea and code for this example was adapeted from a previo
   ### Problems encountered with coding
    - I had some issues trying to separate the data out for the correlation part, it took a lot of googleling and reading up on the groupby() function.[[21](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
    - One of my regrets is that I failed to get the swarmplots all on to one .png. I did a lot of research but could not seem to nail it. It led to me having to create 2 functions, for both the swarm plots and species specific heat maps, one for show and one for saving. I would have liked that to be neater.
-   - Old code - I found that some of the code I encountered was using old parameters in the functions, I had to make some changes and read up on how to correct this. 
+   - Old code - I found that some of the code I encountered during my research was using old parameters in the functions, I had to make some changes and read up on how to correct this. 
    Example:  
    UserWarning: The `factorplot` function has been renamed to `catplot`. The original name will be removed in a future release. Please update your code. Note that the default `kind` in `factorplot` (`'point'`) has changed `'strip'` in `catplot`. 
-   - Rerunning my code - I found it eextremely irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
+   - Rerunning my code - I found it extremely irritating that I was having to run through each plot every time I added something new to my code. I did a number of things to help me out here.
    1. Set the first input in my summary to 'w', and the rest to 'a', this allowed me to overwrite and append every time so every time I ran the program I was able to test that my summary.txt file had not been corrupted
    2. I created my plots as functions this allowed me to call them when required and gave me flexibility of when I wanted to save and show.[[22]](https://realpython.com/defining-your-own-python-function/)
    3. Added looping and an exit button for my program - this was really helpful, I added a while loop that allowed me to run again without having to rerun the program from the command line and an exit input (0) for my program, this allowed me to get out quickly to make a change when I desired.[[23]](https://realpython.com/python-while-loop/) 
 
 ### Problems encountered with data analysis
- - Unfamiliarity with some of the tools. Outside my obvious rookie user level with python I found some of the plots and graphs tough to analyse at the beginning. I could understand the normal histograms and scatter plots to a certain level, as I cited above, I had to do some research on things like box plots, swarm plots and heat maps. However once I had done the research I found them extremly valuable, especially the swarm plots and heat maps.
+ - Unfamiliarity with some of the analysis tools. Outside my obvious rookie user level with python I found some of the plots and graphs tough to analyse at the beginning. I could understand the normal histograms and scatter plots to a certain level, as I cited above, I had to do some research on things like box plots, swarm plots and heat maps. However once I had done the research I found them extremly valuable, especially the swarm plots and heat maps.
  -  Volume of data - there was so much data and research done on the Iris Data set it was a little daunting to try to figure out where to begin. However it was a lot of comfort to be part of the discord group with my classmates to see I was not the only one that had this anxiety. This along with the time given to complete the project, and being able to refer back to my labs, really helped me to get through it bit by bit.
-- Math - It had been awhile since I had tried my hand at math that could not be done by a simple calculator. Some terms such as Standard Deviation were a little frightening at the beginning, luckily YouTube was a great help here to get me reacquainted with the basics once again. Once I was comfortable with the basics I was able to see how these were really valuable when applied to the dataset and allowed me to make assumptions and clear analytical statements from what the data was expressing through these mathematical functions
+- Math - It had been awhile since I had tried my hand at math that could not be done by a simple calculator. Some terms such as Standard Deviation were a little frightening at the beginning, luckily YouTube was a great help here to get me reacquainted with the basics once again. Once I was comfortable with the basics I was able to see how these were really valuable when applied to the dataset and allowed me to make assumptions and clear analytical statements from what the data was expressing through these mathematical functions.
  
 ### Citations
 1.	https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
@@ -251,5 +252,6 @@ It should be noted the idea and code for this example was adapeted from a previo
 28. https://www.youtube.com/watch?v=bmq7hkvfkVw (Random Forest Model - Iris Data)
 29. https://stackabuse.com/decision-trees-in-python-with-scikit-learn/
 30. https://www.youtube.com/watch?v=BD3-2VO3Mpg (Decision Tree Classifier in Python (IRIS data) | Machine Learning)
-31. https://github.com/jennifer-ryan/iris-data-set-project (old GMIT pandas Project)
+31. https://github.com/jennifer-ryan/iris-data-set-project (Example GMIT pandas Project)
+32. https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052 (decision tree classifier algorithm explaination and examples)
 

@@ -7,10 +7,10 @@ iris = datasets.load_iris()
 data= iris.data
 target = iris.target
 
-# classification model
+# classification model - decision tree classifier algorithm
 classType = tree.DecisionTreeClassifier() 
 
-# Train the model with the existing Iris data
+# Model will use the existing Iris data to "learn" or "train itself" to make a prediction
 classType = classType.fit(data, target) # classType.fit method uses existing Iris data to predict "target" species
 
 # Test the classifier model

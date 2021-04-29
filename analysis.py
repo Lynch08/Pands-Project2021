@@ -200,9 +200,9 @@ def displayMenu():
     2 - Bargraph of Variables
     3 - PairPlot - All variables plotted againest all other variables as scatter plots
     4 - Box plot - Distribution of variable data
-    5 - HeatMap - Corrolation between variables
+    5 - HeatMap - Correlation between variables
     6 - Swarmplots - 4 Plots, one for each variable (Close plot to see the next)
-    7 - HeatMaps - 3 graphs, one for each species (Close plot to see the next)
+    7 - HeatMaps - 3 Maps, shows variable correlation for each species (Close Map to see the next)
     8 - Show all above plots in sequence (Close plot to see the next)
     9 - Save all plots as .png
     Please enter the number of an option listed above (invalid inputs will not be accepted): '''))
