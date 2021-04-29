@@ -218,7 +218,7 @@ while (i):
     try:
     # Try to convert 'i' to an integer type
         i = int(i)          
-        if i >= 0:                             # If 'i' is an non-zero positive integer (not one of the choices below)                   
+        if i >= 0:                             # If 'i' is greater or equal to 0 or is not one of the from display                   
             if i == 0:                         # Exit program
                 print('\n\nYou Have Exited The Program\n\n')  # Inform user that the program is finished
 
